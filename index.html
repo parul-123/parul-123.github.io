@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive Layout</title>
+	<link rel="stylesheet" href="css/styles.css">
+	
+	<style>
+	/******* Large device only *********/
+	@media (min-width : 992px) {
+		.col-lg-3{
+			float:left;
+			width: 30%;
+		}
+	}
+	
+	/******* Tablets only *********/
+	@media (min-width:768px) and (max-width:991px) {
+		.col-md-6 {
+			float:left;
+			width:45%;
+		}
+	}
+	</style>
+	
+</head>
+
+<body>
+
+	<h1> Our Menu </h1>
+	
+	<div id="row">
+		<section class="col-lg-3 col-md-6">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus amet alias est? Nobis cum quasi at soluta odit, maiores quaerat dolores expedita ex nemo ea repellendus dolorem sed maxime quos?
+		<span id="span1">Chicken</span>
+		</section>
+		<section class="col-lg-3 col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus amet alias est? Nobis cum quasi at soluta odit, maiores quaerat dolores expedita ex nemo ea repellendus dolorem sed maxime quos?
+		<span id="span2">Beef</span>
+		</section>
+		<section class="col-lg-3 col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus amet alias est? Nobis cum quasi at soluta odit, maiores quaerat dolores expedita ex nemo ea repellendus dolorem sed maxime quos?
+		<span id="span3">Sushi</span>
+		</section>
+	</div>
+</body>
+</html>
